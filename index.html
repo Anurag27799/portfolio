@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+
+      html {
+        background-color: #e07a5f;
+      }
+
+      body {
+        font-family: "Sono", sans-serif;
+      }
+
+      .pricing-container {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+
+      .pricing-plan {
+        flex: 1;
+        background-color: rgba(255, 255, 255, 0.1);
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        height: 200px;
+      }
+
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .plan-features {
+        margin-bottom: 15px;
+      }
+
+      .plan-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .plan-button {
+        background-color: orange;
+        border: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      .nav-bar {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        justify-content: end;
+      }
+
+      .nav-bar-items {
+        background-color: #f2f2f2;
+        padding: 2px;
+        border-radius: 5px;
+      }
+
+      .nav-button {
+        border: none;
+        padding: 5px;
+      }
+
+      .name {
+        display: flex;
+        justify-content: center;
+        color: #f2f2f2;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 600px) {
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav>
+      <ul class="nav-bar">
+        <li class="nav-bar-items"><button class="nav-button">Home</button></li>
+        <li class="nav-bar-items"><button class="nav-button">Blog</button></li>
+        <li class="nav-bar-items"><button class="nav-button">Contact</button></li>
+      </ul>
+    </nav>
+
+    <div class="name"><h1>CA SHWETA PANCHAL</h1></div>
+
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Income Tax Consulting</div>
+        <div class="plan-price">Rs.1000/hour</div>
+        <ul class="plan-features">
+          <li>✅Individual Income Tax Returns</li>
+          <li>✅Accounting Suggestions related to income tax</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
