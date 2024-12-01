@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Flexbox Pricing Table</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,8 +37,7 @@
         border-radius: 10px;
         text-align: center;
         color: white;
-        height: 200px;
-      }
+              }
 
       .plan-features {
         list-style: none;
@@ -88,12 +90,22 @@
 
       
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 600px) {
+
+      @media (max-width: 480px) {
         .pricing-container {
+          display: flex;
           flex-direction: column;
           height: 100%;
         }
+
+        .name {
+          flex-direction: column;
+          font-size: 10px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
       }
+
     </style>
   </head>
 
@@ -107,7 +119,7 @@
       </ul>
     </nav>
 
-    <div class="name"><h1>CA SHWETA PANCHAL</h1></div>
+    <div class="name"><h1>CA Anurag Pal</h1></div>
 
     <div class="pricing-container">
       <div class="pricing-plan">
